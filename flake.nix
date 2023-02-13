@@ -65,5 +65,6 @@
       };
     });
 
-  in outputs // { nixosModule = import ./ops/module.nix self; };
+  in outputs // { nixosModule = import ./ops/module.nix self;
+                  hmModule = import ./ops/hm-module.nix self; };
 }
